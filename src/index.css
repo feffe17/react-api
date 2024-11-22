@@ -22,6 +22,123 @@ header {
 
 main {
   margin-top: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.addBtn {
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: var(--c-primary);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background-color: #c7941a;
+}
+
+.addBtn:active {
+  background-color: #b08014;
+}
+
+.addBtn:focus {
+  outline: none;
+}
+
+.addBtn:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+}
+
+.addBtn:disabled:hover {
+  background-color: #999999;
+}
+
+.addBtn:disabled:active {
+  background-color: #999999;
+}
+
+.addBtn:disabled:focus {
+  outline: none;
+}
+
+.addBtn:disabled:focus-visible {
+  outline: none;
+}
+
+.addBtn:disabled:focus-within {
+  outline: none;
+}
+
+.addBtn:disabled:focus-inside {
+  outline: none;
+}
+
+.addBtn:disabled:focus-outside {
+  outline: none;
+}
+
+.addBtn:disabled:focus-inner {
+  outline: none;
+}
+
+.addPostForm {
+  width: 50%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.addPostForm h2 {
+  margin-bottom: 20px;
+}
+
+.addPostForm input[type="submit"] {
+  background-color: var(--c-primary);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addPostForm input[type="submit"]:hover {
+  background-color: #c7941a;
+}
+
+.addPostForm input[type="submit"]:active {
+  background-color: #b08014;
+}
+
+.addPostForm label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.addPostForm input,
+.addPostForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .container {
